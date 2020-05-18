@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var clase_book_1 = require("./clase_book");
+var clase_library_1 = require("./clase_library");
+var book1 = new clase_book_1.Book("Introducción a Javascript", 400, "2344433-BC23333", "Joseph Smith", "Now Editions");
+var book2 = new clase_book_1.Book("Javascript avanzado", 300, "2344433-BC23335", "Joseph Smith", "Now Editions");
+var book3 = new clase_book_1.Book("Introducción a Typescript", 340, "2344434-BC23333", "Joseph Adam", "Now Editions");
+var library1 = new clase_library_1.Library([book1, book2, book3], "condado de treviño", "pablo");
+//console.log(library1.getfindByAuthor("Joseph Smith"));
+console.log(library1.getToString());

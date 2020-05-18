@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var clase_PERSON_1 = require("./clase_PERSON");
+var calendar_1 = require("./calendar");
+var persona1 = new clase_PERSON_1.Person("Pepe", 30, "teruel");
+var persona2 = new clase_PERSON_1.Person("Marta", 28, "Madrid");
+var persona3 = new clase_PERSON_1.Person("Carlos", 5, "Barcelona");
+var calendar1 = new calendar_1.Calendar();
+calendar1.people = [persona1, persona2, persona3];
+console.log(calendar1);
