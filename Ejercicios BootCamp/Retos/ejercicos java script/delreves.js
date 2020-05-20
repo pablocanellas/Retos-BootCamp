@@ -1,17 +1,17 @@
-function delreves(cambiar) {
+ delreves_arrow = (cambiar) => {
 
-    var letra = "";
+     let letra = "";
 
-    var tamano = cambiar.length;
+     let tamano = cambiar.length;
 
-    for (var i = 0; i < tamano; i++) {
-        letra += cambiar[tamano - i - 1];
+     for (let i = 0; i < tamano; i++) {
+         letra += cambiar[tamano - i - 1];
 
 
 
-    }
-    return letra;
-}
-var pedir = prompt("escriba una palabra a corregir");
+     }
+     return letra;
+ }
+ let pedir = prompt("escriba una palabra a corregir");
 
-delreves(pedir);
+ delreves(pedir);
