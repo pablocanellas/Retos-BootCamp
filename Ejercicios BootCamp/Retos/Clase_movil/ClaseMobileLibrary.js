@@ -33,15 +33,18 @@ var MobileLibrary = /** @class */ (function () {
         this.mobiles = newMobiles;
     };
     MobileLibrary.prototype.totalPriceCaculation = function () {
+        var precio = 0;
         for (var i = 0; i < this.mobiles.length; i++) {
-            this.totalPrice += this.mobiles[i].getprice();
+            precio += this.mobiles[i].getprice();
         }
-        return this.totalPrice;
+        return precio;
     };
     MobileLibrary.prototype.getinfo = function () {
+        console.log("this is all my mobiles:");
         for (var i = 0; i < this.mobiles.length; i++) {
-            console.log("this is all my mobiles:" + "\n" + this.mobiles[i].gettodaInfo() + "\n Price overall:" + this.totalPriceCaculation());
+            console.log("\n" + this.mobiles[i].gettodaInfo() + "\n");
         }
+        console.log(this.totalPrice);
     };
     return MobileLibrary;
 }());
