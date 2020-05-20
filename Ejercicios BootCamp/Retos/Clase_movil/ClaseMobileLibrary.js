@@ -40,7 +40,7 @@ var MobileLibrary = /** @class */ (function () {
     };
     MobileLibrary.prototype.getinfo = function () {
         for (var i = 0; i < this.mobiles.length; i++) {
-            console.log("this is all my mobiles:" + "\n" + this.mobiles[i].gettodaInfo() + this.mobiles + "\n Price overall:" + this.totalPriceCaculation());
+            console.log("this is all my mobiles:" + "\n" + this.mobiles[i].gettodaInfo() + "\n Price overall:" + this.totalPriceCaculation());
         }
     };
     return MobileLibrary;

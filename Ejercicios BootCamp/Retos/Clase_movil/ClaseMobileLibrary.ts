@@ -35,16 +35,19 @@ import{Mobile}from "./claseMovil2";
         this.mobiles=newMobiles;
     }
     private totalPriceCaculation():number {
+        let precio=0;
         for(let i=0;i<this.mobiles.length;i++){
-            this.totalPrice+=this.mobiles[i].getprice();
+            precio+=this.mobiles[i].getprice();
         }
-        return this.totalPrice;
+        return precio;
         
     }
     public getinfo(){
+        console.log("this is all my mobiles:");
         for(let i=0;i<this.mobiles.length;i++){
-            console.log("this is all my mobiles:"+"\n"+this.mobiles[i].gettodaInfo()+this.mobiles+"\n Price overall:"+this.totalPriceCaculation());
+            console.log("\n"+this.mobiles[i].gettodaInfo()+"\n" );
         }
+        console.log(this.totalPrice);
     }
 }
 
