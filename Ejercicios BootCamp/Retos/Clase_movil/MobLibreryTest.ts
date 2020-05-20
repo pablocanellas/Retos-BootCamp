@@ -8,5 +8,5 @@ let librery1=new Array();
 librery1=[movil1,movil2,movil3,movil4];
 let LibreryTotal:MobileLibrary= new MobileLibrary("NuevaTemporada","Marzo",librery1);
 console.log(LibreryTotal.getlocalion());
-console.log(LibreryTotal.getmobiles);
+console.log(LibreryTotal.getmobiles());
 console.log(LibreryTotal.getinfo());

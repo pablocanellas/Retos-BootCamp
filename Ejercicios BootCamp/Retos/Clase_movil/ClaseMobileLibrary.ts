@@ -50,13 +50,3 @@ import{Mobile}from "./claseMovil2";
         console.log(this.totalPrice);
     }
 }
-
-/* function precio(array:) {
-         
-    
-    let precio_total:number=this.gettotalPrice();
-   for(let a=0;a<array.getmobiles().length;a++){
-       precio_total+=array[a].getmobiles().getprice();
-
-   }
-   return precio_total;}*/

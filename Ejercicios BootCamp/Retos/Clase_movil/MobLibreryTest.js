@@ -9,7 +9,6 @@ var movil4 = new claseMovil2_1.Mobile("xiaomi", "Bomb 10", "m", 10, "Plata", "si
 var librery1 = new Array();
 librery1 = [movil1, movil2, movil3, movil4];
 var LibreryTotal = new ClaseMobileLibrary_1.MobileLibrary("NuevaTemporada", "Marzo", librery1);
-;
 console.log(LibreryTotal.getlocalion());
-console.log(LibreryTotal.getmobiles);
+console.log(LibreryTotal.getmobiles());
 console.log(LibreryTotal.getinfo());
