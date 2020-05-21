@@ -47,6 +47,6 @@ import{Mobile}from "./claseMovil2";
         for(let i=0;i<this.mobiles.length;i++){
             console.log("\n"+this.mobiles[i].gettodaInfo()+"\n" );
         }
-        console.log(this.totalPrice);
+        console.log( "PriceOverold:"+this.totalPrice);
     }
 }
