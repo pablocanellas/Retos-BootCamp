@@ -90,7 +90,7 @@ var Triangulo = /** @class */ (function () {
         this.vertice3 = newVertice3;
     };
     Triangulo.prototype.calcularLongitudLados = function () {
-        var longitudLados = new Array[3];
+        var longitudLados = Array();
         longitudLados[0] = this.vertice1.calcularDistancia(this.vertice2);
         longitudLados[1] = this.vertice1.calcularDistancia(this.vertice3);
         longitudLados[2] = this.vertice3.calcularDistancia(this.vertice1);
