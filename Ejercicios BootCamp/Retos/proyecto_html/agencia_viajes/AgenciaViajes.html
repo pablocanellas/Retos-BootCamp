@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Luxury Villa Rentals</title>
+    <style>
+        #leco {
+            margin-top: ;
+            margin-left: 3%;
+        }
+        
+        #ll {
+            margin-left: 85%;
+        }
+        
+        #tl {
+            text-align: center;
+        }
+        
+        .table {
+            margin: auto;
+        }
+        
+        .table img {
+            height: 700px;
+            width: 600px;
+        }
+        
+        #parr {
+            text-align: center;
+        }
+        
+        .formulario {
+            text-align: center;
+            background-color: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h3 id="leco">LE COLLECCIONIST</h3>
+            <h3 id="ll"><b>LLamenos al +33 173 030 202</b></h3>
+        </div>
+
+
+
+
+        <img src="IBIZA.jpg">
+    </header>
+    <section>
+        <h1 id="tl">Nuestras Colecciones de Villas de Lujo en ALquier en Ibiza</h1>
+        <div>
+            <table class="table">
+                <tr>
+                    <th>
+                        <h4>Vistas de la salvaje ibiza</h4>
+                    </th>
+                    <th>
+                        <h4>Sumérgete con estilo</h4>
+                    </th>
+                    <th>
+                        <h4>Una finca junto al mar</h4>
+                    </th>
+
+                </tr>
+                <tr>
+                    <td><img src="VistasMar.jpg"></td>
+                    <td><img src="estilo.jpg"></td>
+                    <td><img src="ibizav.jpg"></td>
+                </tr>
+            </table>
+        </div>
+        <p id="parr">Situadas frente al vasto mar azul o en lo alto de las colinas y mirando hacia el exuberante paisaje, nuestras villas familiares en Ibiza ofrecen hermosas vistas de la costa salvaje de la isla</p>
+    </section>
+    <section class="formulario">
+        <h1>Permítanos organizar sus vacaciones a medida</h1>
+        <h4>estamos aquí para simplificar tu vida.Comience su experiencia Le Collectionist ahora compartiendo con nostros sus planes para sus próximas vaciones</h4>
+        <div>
+            <form action="" method="get">
+                <div>
+                    <label for="name">Nombre de Pila:</label>
+                    <input type="text" id="name" name="user_name" />
+                </div>
+                <br>
+                <div>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="user_email">
+                </div>
+                <br>
+                <div>
+                    <label for="telefono">Telefono:</label>
+                    <input type="texto" id="telefono" telefono="user_telefono">
+                </div>
+                <br>
+                <div>
+                    <label for="msg">Mensaje:</label>
+                    <textarea msg="user_message" id="msg"></textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" onclick="sub()">Enviar Mensaje:</button>
+                </div>
+
+            </form>
+        </div>
+        <script>
+            var f = require('fs');
+
+
+
+            function sub() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("mail").value;
+                var telefono = document.getElementById("telefono").value;
+                var msg = document.getElementById("msg").value;
+                var objeto = {
+                    "info": []
+                };
+
+
+                objeto.info.push({
+                    "nombre": name,
+                    "email": email,
+                    "telefono": telefono,
+                    "msg": msg
+                })
+                json = JSON.stringify(objeto);
+                alert(json);
+                var array_json = [json];
+                for (var i = 0; i < array_json.length; i++) {
+                    for (var a = 0; a < array_json[i].length; a++) {
+                        if (array_json[i][a] == 'r' || array_json[i][a] == 'R') {
+                            alert("tenemos nombres que contiene la letra 'R'")
+                        }
+                    }
+                }
+
+                //var nuevo = JSON.parse(json);
+
+
+
+
+
+
+
+                //alert(name + "  " + email + "  " + "  " + telefono + "  " + msg);
+
+
+            }
+        </script>
+
+    </section>
+
+</body>
+
+</html>
